@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patio de Juegos</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
-
     <style>
         h1 {
             text-align: center;
@@ -35,14 +33,12 @@
 <body>
     <h1>Welcome!</h1>
 
-<table>
-        
+    <table>
         <tr>
             {% for i in range(0, num) %}
             <td class="color1" style="background-color: {{color}};"></td>
             {% endfor %}
         </tr>
-        
     </table>
 </body>
 </html>
