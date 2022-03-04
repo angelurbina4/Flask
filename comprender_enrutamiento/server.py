@@ -10,15 +10,12 @@ def hola_mundo():
 def dojo():
     return "<h2>¡Dojo!</h2>"
 
-@app.route('/say/<name>')
+@app.route('/say/<string:name>')
 def hola_name(name):
-    str(name)
     return f"Hola {name}"
 
-@app.route('/repeat/<int:num>/<name>')
+@app.route('/repeat/<int:num>/<string:name>')
 def repeat_name(num, name):
-    int(num)
-    str(name)
     output = ''
     for i in range(0, num):
         output += '<p>'+name+'</p>'
