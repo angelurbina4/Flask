@@ -1,0 +1,12 @@
+.container-sm {
+    margin: 50px auto;
+    background-color: rgb(222, 240, 246);
+    border: 2px solid lightskyblue;
+    border-radius: 1rem;
+    padding: 30px;
+}
+
+h1 {
+    color: lightskyblue;
+    width: 100px;
+}
